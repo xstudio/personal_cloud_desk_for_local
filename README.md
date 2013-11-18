@@ -26,17 +26,17 @@
 
 系统密码存储方案
 ===========================
-用户密码在数据库中为32位md5密文
+	用户密码在数据库中为32位md5密文
 
-当用户登录或者注册时，提交的密码会进行处理
+	当用户登录或者注册时，提交的密码会进行处理
 
-$password=md5($_POST['regpassword'].COMSTR);
+	$password=md5($_POST['password'].COMSTR);
 
-最终存储在数据库的为经过原密码和config中的COMSTR连接进行散列的32位字符串$password
+	最终存储在数据库的为经过原密码和config中的COMSTR连接进行散列的32位字符串$password
 
-所以，在系统运行过程中COMSTR的值，最好不要改动，如果有改动的话，请更新已插入用户表中的用户密码。
+	所以，在系统运行过程中COMSTR的值，最好不要改动，如果有改动的话，请更新已插入用户表中的用户密码。
 
-要查看原密码应该在数据库中存储的值，可以访问根目录下下get_store_pwd.php?pwd=password（password为你的原密码）
+	要查看原密码应该在数据库中存储的值，可以访问根目录下下get_store_pwd.php?pwd=password（password为你的原密码）
 
 
 
