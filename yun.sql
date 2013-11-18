@@ -1,4 +1,4 @@
---CREATE DATABASE `yun` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+-- CREATE DATABASE `yun` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE TABLE `yun_icon`(
     `ico_id` mediumint unsigned AUTO_INCREMENT PRIMARY KEY COMMENT 'ID',
     `ico_name` varchar(20) NOT NULL COMMENT 'ICO名称',
@@ -39,4 +39,4 @@ CREATE TABLE `yun_user`(
 )ENGINE=MyISAM DEFAULT CHARSET=UTF8;
 
 INSERT INTO `yun_user` (`user_name`, `user_pwd`, `user_mail`, `user_sex`, `user_birth`, `user_address`, `user_website`, `user_admin`) VALUES
-('xstudio', 'd6481bcff2b7be83695c0022dda32feb', NULL, NULL, NULL, NULL, NULL, 1),
+('xstudio', 'd6481bcff2b7be83695c0022dda32feb', NULL, NULL, NULL, NULL, NULL, 1);
